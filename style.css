@@ -8,6 +8,7 @@
 
 :root {
   --dark-cyan: hsl(158, 36%, 37%);
+  --very-dark-cyan: hsl(150, 39%, 20%);
   --cream: hsl(30, 38%, 92%);
   --very-dark-blue: hsl(212, 21%, 14%);
   --dark-grayish-blue: hsl(228, 12%, 48%);
@@ -105,6 +106,12 @@ main {
   font-weight: 700;
   font-size: 0.875rem;
   color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.card__action--add-to-cart:hover {
+  background-color: var(--very-dark-cyan);
 }
 
 .cart-icon {
