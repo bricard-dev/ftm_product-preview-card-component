@@ -27,8 +27,8 @@
   </head>
   <body>
     <main>
-      <div class="card__product">
-        <picture class="card__feature-image">
+      <div class="card">
+        <picture class="card__product-image">
           <source
             media="(min-width: 768px)"
             srcset="./images/image-product-desktop.jpg"
@@ -39,22 +39,20 @@
           />
         </picture>
         <article class="card__content">
-          <div class="card-informations">
-            <p class="card__category">Perfume</p>
-            <h2 class="card__title">Gabrielle Essence Eau De Parfum</h2>
-            <p class="card__description">
-              A floral, solar and voluptuous interpretation composed by Olivier
-              Polge, Perfumer-Creator for the House of CHANEL.
+          <p class="card__category">Perfume</p>
+          <h2 class="card__title">Gabrielle Essence Eau De Parfum</h2>
+          <p class="card__description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="card__price">
+            <p class="actual-price">$149.99</p>
+            <p class="previous-price">
+              <s> $169.99 </s>
             </p>
-            <div class="card__price">
-              <p class="actual-price">$149.99</p>
-              <p class="previous-price">
-                <s> $169.99 </s>
-              </p>
-            </div>
           </div>
-          <button aria-label="Add to Cart">
-            <div>
+          <button class="card__action--add-to-cart" aria-label="Add to Cart">
+            <div class="cart-icon">
               <img src="./images/icon-cart.svg" alt="Cart" />
             </div>
             Add to Cart
@@ -63,13 +61,13 @@
       </div>
     </main>
 
-    $149.99 $169.99 Add to Cart
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </div>
+    </footer>
   </body>
 </html>
